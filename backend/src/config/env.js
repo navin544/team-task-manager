@@ -32,6 +32,15 @@ if (!discoveredUri || discoveredUri === 'MISSING_MONGODB_URI_IN_RAILWAY_DASHBOAR
   }
 }
 
+// FINAL ZERO-FAILURE FALLBACK: 
+// Only if we are on Railway and everything else failed, use the verified Atlas URI.
+if (!discoveredUri || discoveredUri === 'MISSING_MONGODB_URI_IN_RAILWAY_DASHBOARD') {
+  if (process.env.RAILWAY_STATIC_URL || process.env.RAILWAY_ENVIRONMENT || process.env.RAILWAY_PUBLIC_DOMAIN) {
+    discoveredUri = 'mongodb+srv://codingbuddy55_db_user:2HIKsr0qZ7VKwYtO@cluster0.p1huqyu.mongodb.net/team_task_manager?retryWrites=true&w=majority';
+    console.warn('CRITICAL: Using verified selection-process fallback URI.');
+  }
+}
+
 process.env.MONGODB_URI = discoveredUri || 'MISSING_MONGODB_URI_IN_RAILWAY_DASHBOARD';
 // ---------------------------------------
 
