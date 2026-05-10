@@ -1,0 +1,16 @@
+{
+  "dashboardPath": "/dashboard",
+  "dashboardHasPulse": "true",
+  "dashboardHasProject": "false",
+  "dashboardHasTask": "false",
+  "projectsPath": "/login",
+  "projectsHasHeader": "false",
+  "projectsHasSeededProject": "false",
+  "tasksPath": "/login",
+  "tasksHasHeader": "false",
+  "tasksHasSeededTask": "false",
+  "dashboardScreenshot": "- [Screenshot of viewport](.playwright-cli\\page-2026-05-09T14-18-07-855Z.png)",
+  "projectsScreenshot": "- [Screenshot of viewport](.playwright-cli\\page-2026-05-09T14-18-19-946Z.png)",
+  "tasksScreenshot": "- [Screenshot of viewport](.playwright-cli\\page-2026-05-09T14-18-31-832Z.png)",
+  "consoleErrors": "### Result\r\nTotal messages: 8 (Errors: 2, Warnings: 2)\r\nReturning 2 messages for level \"error\"\r\n\r\n[ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:5410/api/auth/refresh:0\r\n[ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:5410/api/auth/refresh:0"
+}

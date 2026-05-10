@@ -1,0 +1,185 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e44]:
+      - complementary [ref=e45]:
+        - generic [ref=e46]:
+          - link "TM Team Task Manager" [ref=e47] [cursor=pointer]:
+            - /url: /dashboard
+            - generic [ref=e48]: TM
+            - generic [ref=e49]:
+              - paragraph [ref=e50]: Team Task
+              - paragraph [ref=e51]: Manager
+          - button [ref=e52] [cursor=pointer]:
+            - img [ref=e53]
+        - navigation [ref=e55]:
+          - link "Dashboard" [ref=e56] [cursor=pointer]:
+            - /url: /dashboard
+            - img [ref=e57]
+            - generic [ref=e62]: Dashboard
+          - link "Projects" [ref=e63] [cursor=pointer]:
+            - /url: /projects
+            - img [ref=e64]
+            - generic [ref=e66]: Projects
+          - link "Tasks" [ref=e67] [cursor=pointer]:
+            - /url: /tasks
+            - img [ref=e68]
+            - generic [ref=e71]: Tasks
+          - link "Team Members" [ref=e72] [cursor=pointer]:
+            - /url: /team-members
+            - img [ref=e73]
+            - generic [ref=e78]: Team Members
+          - link "Settings" [ref=e79] [cursor=pointer]:
+            - /url: /settings
+            - img [ref=e80]
+            - generic [ref=e83]: Settings
+        - generic [ref=e84]:
+          - generic [ref=e85]:
+            - paragraph [ref=e86]: Signed in as
+            - paragraph [ref=e87]: System Admin
+            - paragraph [ref=e88]: ADMIN
+          - button "Logout" [ref=e89] [cursor=pointer]:
+            - img [ref=e90]
+            - text: Logout
+      - generic [ref=e93]:
+        - banner [ref=e94]:
+          - generic [ref=e96]:
+            - paragraph [ref=e97]: Workspace
+            - heading "Command Center" [level=1] [ref=e98]
+          - generic [ref=e99]:
+            - generic [ref=e100]:
+              - img [ref=e101]
+              - generic [ref=e104]: Search tasks, people, projects
+            - button "Toggle theme" [ref=e105] [cursor=pointer]:
+              - img [ref=e106]
+            - link "Go to profile" [ref=e112] [cursor=pointer]:
+              - /url: /profile
+              - img [ref=e113]
+            - img [ref=e118]
+        - main [ref=e122]:
+          - generic [ref=e123]:
+            - generic [ref=e125]:
+              - paragraph [ref=e126]: Executive view
+              - heading "Delivery pulse" [level=2] [ref=e127]
+              - paragraph [ref=e128]: Track project throughput, balance deadlines, and spot blocked work before it becomes drag.
+            - generic [ref=e129]:
+              - generic [ref=e133]:
+                - generic [ref=e134]:
+                  - paragraph [ref=e135]: Total projects
+                  - paragraph [ref=e136]: "1"
+                  - paragraph [ref=e137]: 2 contributors across the workspace
+                - img [ref=e139]
+              - generic [ref=e144]:
+                - generic [ref=e145]:
+                  - paragraph [ref=e146]: Total tasks
+                  - paragraph [ref=e147]: "2"
+                  - paragraph [ref=e148]: All visible work items in your scope
+                - img [ref=e150]
+              - generic [ref=e156]:
+                - generic [ref=e157]:
+                  - paragraph [ref=e158]: Completed
+                  - paragraph [ref=e159]: "0"
+                  - paragraph [ref=e160]: Finished work items
+                - img [ref=e162]
+              - generic [ref=e168]:
+                - generic [ref=e169]:
+                  - paragraph [ref=e170]: Pending
+                  - paragraph [ref=e171]: "2"
+                  - paragraph [ref=e172]: Todo and in-progress items
+                - img [ref=e174]
+              - generic [ref=e180]:
+                - generic [ref=e181]:
+                  - paragraph [ref=e182]: Overdue
+                  - paragraph [ref=e183]: "0"
+                  - paragraph [ref=e184]: Requires attention
+                - img [ref=e186]
+              - generic [ref=e191]:
+                - generic [ref=e192]:
+                  - paragraph [ref=e193]: Productivity
+                  - paragraph [ref=e194]: 0%
+                  - paragraph [ref=e195]: Completion rate across visible tasks
+                - img [ref=e197]
+            - generic [ref=e200]:
+              - generic [ref=e201]:
+                - generic [ref=e202]:
+                  - heading "Task Completion Trend" [level=3] [ref=e203]
+                  - paragraph [ref=e204]: Daily completed work across the past week.
+                - img [ref=e207]:
+                  - generic [ref=e212]:
+                    - generic [ref=e214]: May 3
+                    - generic [ref=e216]: May 4
+                    - generic [ref=e218]: May 5
+                    - generic [ref=e220]: May 6
+                    - generic [ref=e222]: May 7
+                    - generic [ref=e224]: May 8
+                    - generic [ref=e226]: May 9
+                  - generic [ref=e228]:
+                    - generic [ref=e230]: "0"
+                    - generic [ref=e232]: "1"
+                    - generic [ref=e234]: "2"
+                    - generic [ref=e236]: "3"
+                    - generic [ref=e238]: "4"
+              - generic [ref=e239]:
+                - generic [ref=e240]:
+                  - heading "Recent Activity" [level=3] [ref=e241]
+                  - paragraph [ref=e242]: Updates across projects, tasks, comments, and members.
+                - generic [ref=e243]:
+                  - generic [ref=e245]:
+                    - generic [ref=e246]:
+                      - paragraph [ref=e247]: System Admin
+                      - paragraph [ref=e248]: auth logged_in
+                    - generic [ref=e249]: 1 second ago
+                  - generic [ref=e251]:
+                    - generic [ref=e252]:
+                      - paragraph [ref=e253]: System Admin
+                      - paragraph [ref=e254]: auth logged_in
+                    - generic [ref=e255]: 10 minutes ago
+                  - generic [ref=e257]:
+                    - generic [ref=e258]:
+                      - paragraph [ref=e259]: System Admin
+                      - paragraph [ref=e260]: auth logged_in
+                    - generic [ref=e261]: 14 minutes ago
+                  - generic [ref=e263]:
+                    - generic [ref=e264]:
+                      - paragraph [ref=e265]: System Admin
+                      - paragraph [ref=e266]: auth logged_in
+                    - generic [ref=e267]: 2 hours ago
+            - generic [ref=e268]:
+              - generic [ref=e269]:
+                - generic [ref=e270]:
+                  - heading "Status Distribution" [level=3] [ref=e271]
+                  - paragraph [ref=e272]: Live visibility into task flow and bottlenecks.
+                - img [ref=e275]:
+                  - generic [ref=e277]:
+                    - img [ref=e279]
+                    - img [ref=e281]
+              - generic [ref=e282]:
+                - generic [ref=e283]:
+                  - heading "Priority Mix" [level=3] [ref=e284]
+                  - paragraph [ref=e285]: How work is distributed across urgency levels.
+                - img [ref=e288]:
+                  - generic [ref=e293]:
+                    - generic [ref=e295]: HIGH
+                    - generic [ref=e297]: MEDIUM
+                  - generic [ref=e299]:
+                    - generic [ref=e301]: "0"
+                    - generic [ref=e303]: "1"
+                    - generic [ref=e305]: "2"
+                    - generic [ref=e307]: "3"
+                    - generic [ref=e309]: "4"
+            - generic [ref=e317]:
+              - generic [ref=e318]:
+                - heading "User Performance" [level=3] [ref=e319]
+                - paragraph [ref=e320]: Completion ratios for the most active assignees.
+              - generic [ref=e321]:
+                - generic [ref=e322]:
+                  - generic [ref=e323]:
+                    - paragraph [ref=e324]: Delivery Member
+                    - paragraph [ref=e325]: 0 completed of 1 assigned
+                  - generic [ref=e328]: 0%
+                - generic [ref=e329]:
+                  - generic [ref=e330]:
+                    - paragraph [ref=e331]: System Admin
+                    - paragraph [ref=e332]: 0 completed of 1 assigned
+                  - generic [ref=e335]: 0%
+    - status [ref=e341]: Welcome back
+  - generic [ref=e342]: HIGH

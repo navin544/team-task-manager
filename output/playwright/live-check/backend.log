@@ -1,0 +1,27 @@
+
+> team-task-manager-backend@1.0.0 start
+> node src/server.js
+
+API server listening on port 5000
+[0mGET /health [32m200[0m 4.468 ms - 61[0m
+[0mPOST /api/auth/refresh [33m401[0m 2.094 ms - -[0m
+[0mPOST /api/auth/refresh [33m401[0m 4.829 ms - -[0m
+[0mPOST /api/auth/refresh [33m401[0m 1.499 ms - -[0m
+[0mPOST /api/auth/refresh [33m401[0m 2.265 ms - -[0m
+[0mPOST /api/auth/refresh [33m401[0m 1.094 ms - -[0m
+[0mPOST /api/auth/refresh [33m401[0m 2.551 ms - -[0m
+[0mPOST /api/auth/refresh [33m401[0m 0.662 ms - -[0m
+[0mPOST /api/auth/refresh [33m401[0m 1.076 ms - -[0m
+[0mGET /health [32m200[0m 0.447 ms - 61[0m
+[0mPOST /api/auth/refresh [33m401[0m 0.864 ms - -[0m
+[0mPOST /api/auth/refresh [33m401[0m 1.205 ms - -[0m
+[0mPOST /api/auth/refresh [33m401[0m 0.530 ms - -[0m
+[0mPOST /api/auth/refresh [33m401[0m 1.980 ms - -[0m
+[0mPOST /api/auth/refresh [33m401[0m 0.771 ms - -[0m
+[0mPOST /api/auth/refresh [33m401[0m 0.958 ms - -[0m
+[0mPOST /api/auth/refresh [33m401[0m 1.077 ms - -[0m
+[0mPOST /api/auth/refresh [33m401[0m 2.254 ms - -[0m
+[0mPOST /api/auth/refresh [33m401[0m 1.566 ms - -[0m
+[0mPOST /api/auth/refresh [33m401[0m 2.073 ms - -[0m
+[0mPOST /api/auth/refresh [33m401[0m 0.793 ms - -[0m
+[0mPOST /api/auth/refresh [33m401[0m 0.704 ms - -[0m

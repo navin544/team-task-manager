@@ -1,0 +1,47 @@
+openapi: 3.0.3
+info:
+  title: Team Task Manager API
+  version: 1.0.0
+  description: Core REST API surface for Team Task Manager.
+servers:
+  - url: http://localhost:5000/api
+paths:
+  /auth/register:
+    post:
+      summary: Register a new member account
+  /auth/login:
+    post:
+      summary: Login and receive access token plus refresh cookie
+  /auth/refresh:
+    post:
+      summary: Rotate refresh token and issue a fresh access token
+  /projects:
+    get:
+      summary: List projects in the current user's scope
+    post:
+      summary: Create a project
+  /projects/{id}:
+    get:
+      summary: Get project details
+    put:
+      summary: Update a project
+    delete:
+      summary: Delete a project
+  /tasks:
+    get:
+      summary: List tasks
+    post:
+      summary: Create a task
+  /tasks/{id}:
+    get:
+      summary: Get task details
+    put:
+      summary: Update a task
+    delete:
+      summary: Delete a task
+  /comments:
+    post:
+      summary: Add a task comment
+  /comments/{taskId}:
+    get:
+      summary: List comments for a task

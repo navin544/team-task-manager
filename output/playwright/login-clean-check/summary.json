@@ -1,0 +1,10 @@
+{
+  "loginConsole": "### Result\r\nTotal messages: 7 (Errors: 1, Warnings: 2)\r\nReturning 1 messages for level \"error\"\r\n\r\n[ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:5467/favicon.ico:0",
+  "dashboardPath": "/dashboard",
+  "dashboardConsole": "### Result\r\nTotal messages: 8 (Errors: 1, Warnings: 3)\r\nReturning 1 messages for level \"error\"\r\n\r\n[ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:5467/favicon.ico:0",
+  "projectsPath": "/projects",
+  "projectsHasSeededProject": "true",
+  "tasksPath": "/tasks",
+  "tasksHasSeededTask": "true",
+  "finalConsole": "### Result\r\nTotal messages: 6 (Errors: 0, Warnings: 3)\r\nReturning 0 messages for level \"error\""
+}

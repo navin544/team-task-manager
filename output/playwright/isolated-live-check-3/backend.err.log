@@ -1,0 +1,81 @@
+Primary MongoDB connection failed (ECONNREFUSED). Falling back to local MongoDB.
+Error: Refresh token is required
+    at refreshSession (C:\Users\nchou\Desktop\New folder (2)\backend\src\services\authService.js:118:11)
+    at C:\Users\nchou\Desktop\New folder (2)\backend\src\controllers\authController.js:53:25
+    at C:\Users\nchou\Desktop\New folder (2)\backend\src\utils\catchAsync.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:284:15
+    at router.process_params (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:280:10)
+Error: Refresh token is required
+    at refreshSession (C:\Users\nchou\Desktop\New folder (2)\backend\src\services\authService.js:118:11)
+    at C:\Users\nchou\Desktop\New folder (2)\backend\src\controllers\authController.js:53:25
+    at C:\Users\nchou\Desktop\New folder (2)\backend\src\utils\catchAsync.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:284:15
+    at router.process_params (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:280:10)
+MongoServerError: E11000 duplicate key error collection: team_task_manager.refreshtokens index: tokenHash_1 dup key: { tokenHash: "a80f25e87701c2c0bf94a422eff291e9c4f6d06f88af436257227105bb515505" }
+    at InsertOneOperation.handleOk (C:\Users\nchou\Desktop\New folder (2)\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at tryOperation (C:\Users\nchou\Desktop\New folder (2)\node_modules\mongodb\lib\operations\execute_operation.js:214:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async executeOperation (C:\Users\nchou\Desktop\New folder (2)\node_modules\mongodb\lib\operations\execute_operation.js:78:16)
+    at async Collection.insertOne (C:\Users\nchou\Desktop\New folder (2)\node_modules\mongodb\lib\collection.js:154:16)
+Error: Authentication required
+    at C:\Users\nchou\Desktop\New folder (2)\backend\src\middleware\authMiddleware.js:12:11
+    at C:\Users\nchou\Desktop\New folder (2)\backend\src\utils\catchAsync.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:286:9
+    at router.process_params (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:280:10)
+    at router.handle (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\layer.js:95:5)
+Error: Authentication required
+    at C:\Users\nchou\Desktop\New folder (2)\backend\src\middleware\authMiddleware.js:12:11
+    at C:\Users\nchou\Desktop\New folder (2)\backend\src\utils\catchAsync.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:286:9
+    at router.process_params (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:280:10)
+    at router.handle (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\layer.js:95:5)
+MongoServerError: E11000 duplicate key error collection: team_task_manager.refreshtokens index: tokenHash_1 dup key: { tokenHash: "a80f25e87701c2c0bf94a422eff291e9c4f6d06f88af436257227105bb515505" }
+    at InsertOneOperation.handleOk (C:\Users\nchou\Desktop\New folder (2)\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at tryOperation (C:\Users\nchou\Desktop\New folder (2)\node_modules\mongodb\lib\operations\execute_operation.js:214:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async executeOperation (C:\Users\nchou\Desktop\New folder (2)\node_modules\mongodb\lib\operations\execute_operation.js:78:16)
+    at async Collection.insertOne (C:\Users\nchou\Desktop\New folder (2)\node_modules\mongodb\lib\collection.js:154:16)
+Error: Refresh token is no longer valid
+    at refreshSession (C:\Users\nchou\Desktop\New folder (2)\backend\src\services\authService.js:127:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\Users\nchou\Desktop\New folder (2)\backend\src\controllers\authController.js:53:19
+Error: Refresh token is no longer valid
+    at refreshSession (C:\Users\nchou\Desktop\New folder (2)\backend\src\services\authService.js:127:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\Users\nchou\Desktop\New folder (2)\backend\src\controllers\authController.js:53:19
+Failed to sync overdue tasks PoolClearedOnNetworkError: Connection to 127.0.0.1:27017 interrupted due to server monitor timeout
+    at ConnectionPool.interruptInUseConnections (C:\Users\nchou\Desktop\New folder (2)\node_modules\mongodb\lib\cmap\connection_pool.js:253:36)
+    at C:\Users\nchou\Desktop\New folder (2)\node_modules\mongodb\lib\cmap\connection_pool.js:241:41
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) {
+  errorLabelSet: Set(1) { 'PoolRequstedRetry' },
+  beforeHandshake: false,
+  address: '127.0.0.1:27017',
+  [cause]: MongoNetworkTimeoutError: connection <monitor> to 127.0.0.1:27017 timed out
+      at Timeout._onTimeout (C:\Users\nchou\Desktop\New folder (2)\node_modules\mongodb\lib\cmap\connection.js:126:26)
+      at listOnTimeout (node:internal/timers:605:17)
+      at process.processTimers (node:internal/timers:541:7) {
+    errorLabelSet: Set(2) { 'ResetPool', 'InterruptInUseConnections' },
+    beforeHandshake: false,
+    [cause]: undefined
+  }
+}

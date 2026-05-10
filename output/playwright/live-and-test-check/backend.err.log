@@ -1,0 +1,9 @@
+Primary MongoDB connection failed (ECONNREFUSED). Falling back to local MongoDB.
+Error: Refresh token is no longer valid
+    at refreshSession (C:\Users\nchou\Desktop\New folder (2)\backend\src\services\authService.js:127:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\Users\nchou\Desktop\New folder (2)\backend\src\controllers\authController.js:53:19
+Error: Refresh token is no longer valid
+    at refreshSession (C:\Users\nchou\Desktop\New folder (2)\backend\src\services\authService.js:127:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\Users\nchou\Desktop\New folder (2)\backend\src\controllers\authController.js:53:19

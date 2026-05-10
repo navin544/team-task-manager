@@ -1,0 +1,13 @@
+node_modules
+dist
+coverage
+.env
+.env.local
+.env.production
+backend/prisma/dev.db
+backend/uploads
+backend/src/uploads/*
+frontend/dist
+backend/dist
+.DS_Store
+Thumbs.db

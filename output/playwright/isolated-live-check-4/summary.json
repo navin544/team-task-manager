@@ -1,0 +1,16 @@
+{
+  "dashboardPath": "/dashboard",
+  "dashboardHasPulse": "true",
+  "dashboardHasProject": "false",
+  "dashboardHasTask": "false",
+  "projectsPath": "/projects",
+  "projectsHasHeader": "true",
+  "projectsHasSeededProject": "true",
+  "tasksPath": "/tasks",
+  "tasksHasHeader": "true",
+  "tasksHasSeededTask": "true",
+  "dashboardScreenshot": "- [Screenshot of viewport](.playwright-cli\\page-2026-05-09T14-21-16-547Z.png)",
+  "projectsScreenshot": "- [Screenshot of viewport](.playwright-cli\\page-2026-05-09T14-21-29-137Z.png)",
+  "tasksScreenshot": "- [Screenshot of viewport](.playwright-cli\\page-2026-05-09T14-21-41-301Z.png)",
+  "consoleErrors": "### Result\r\nTotal messages: 6 (Errors: 0, Warnings: 3)\r\nReturning 0 messages for level \"error\""
+}

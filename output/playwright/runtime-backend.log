@@ -1,0 +1,8 @@
+
+> team-task-manager-backend@1.0.0 start
+> node src/server.js
+
+API server listening on port 5000
+[0mGET /health [32m200[0m 2.058 ms - 61[0m
+[0mPOST /api/auth/login [32m200[0m 410.190 ms - 610[0m
+[0mGET /api/dashboard/summary [32m200[0m 109.869 ms - -[0m

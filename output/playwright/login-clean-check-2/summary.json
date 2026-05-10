@@ -1,0 +1,10 @@
+{
+  "loginConsole": "### Result\r\nTotal messages: 6 (Errors: 0, Warnings: 2)\r\nReturning 0 messages for level \"error\"",
+  "dashboardPath": "/dashboard",
+  "dashboardConsole": "### Result\r\nTotal messages: 7 (Errors: 0, Warnings: 3)\r\nReturning 0 messages for level \"error\"",
+  "projectsPath": "/projects",
+  "projectsHasSeededProject": "true",
+  "tasksPath": "/tasks",
+  "tasksHasSeededTask": "true",
+  "finalConsole": "### Result\r\nTotal messages: 6 (Errors: 0, Warnings: 3)\r\nReturning 0 messages for level \"error\""
+}

@@ -1,0 +1,17 @@
+
+> team-task-manager-backend@1.0.0 start
+> node src/server.js
+
+API server listening on port 5410
+[0mGET /health [32m200[0m 1.597 ms - 61[0m
+[0mPOST /api/auth/refresh [33m401[0m 3.569 ms - -[0m
+[0mPOST /api/auth/refresh [33m401[0m 4.189 ms - -[0m
+[0mPOST /api/auth/login [32m200[0m 558.202 ms - 610[0m
+[0mGET /api/dashboard/summary [32m200[0m 140.621 ms - -[0m
+[0mPOST /api/auth/refresh [32m200[0m 26.311 ms - 605[0m
+[0mPOST /api/auth/refresh [31m500[0m 48.585 ms - 987[0m
+[0mGET /api/projects?page=1&limit=6 [33m401[0m 0.802 ms - -[0m
+[0mGET /api/users [33m401[0m 1.060 ms - -[0m
+[0mPOST /api/auth/refresh [31m500[0m 12.662 ms - 987[0m
+[0mPOST /api/auth/refresh [33m401[0m 8.930 ms - 492[0m
+[0mPOST /api/auth/refresh [33m401[0m 12.496 ms - 492[0m

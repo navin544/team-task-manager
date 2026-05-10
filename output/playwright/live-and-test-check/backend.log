@@ -1,0 +1,30 @@
+
+> team-task-manager-backend@1.0.0 start
+> node src/server.js
+
+API server listening on port 5490
+[0mGET /health [32m200[0m 2.936 ms - 61[0m
+[0mPOST /api/auth/login [32m200[0m 510.604 ms - 610[0m
+[0mGET /api/dashboard/summary [32m200[0m 53.675 ms - -[0m
+[0mPOST /api/auth/refresh [32m200[0m 40.538 ms - 605[0m
+[0mPOST /api/auth/refresh [32m200[0m 39.732 ms - 605[0m
+[0mGET /api/users [32m200[0m 18.361 ms - 644[0m
+[0mGET /api/projects?page=1&limit=6 [32m200[0m 38.682 ms - -[0m
+[0mPOST /api/auth/refresh [32m200[0m 27.643 ms - 605[0m
+[0mPOST /api/auth/refresh [32m200[0m 27.309 ms - 605[0m
+[0mGET /api/projects?page=1&limit=50 [32m200[0m 28.570 ms - -[0m
+[0mGET /api/tasks?page=1&limit=16&sortBy=updatedAt [32m200[0m 30.328 ms - -[0m
+[0mPOST /api/auth/refresh [32m200[0m 2067.434 ms - 605[0m
+[0mPOST /api/auth/refresh [32m200[0m 2158.573 ms - 605[0m
+[0mGET /api/tasks?page=1&limit=16&sortBy=updatedAt [36m304[0m 546.725 ms - -[0m
+[0mGET /api/projects?page=1&limit=50 [36m304[0m 1398.280 ms - -[0m
+[0mPOST /api/auth/refresh [32m200[0m 2296.456 ms - 605[0m
+[0mPOST /api/auth/refresh [32m200[0m 2006.791 ms - 605[0m
+[0mGET /api/tasks?page=1&limit=16&sortBy=updatedAt [36m304[0m 1452.609 ms - -[0m
+[0mGET /api/projects?page=1&limit=50 [36m304[0m 1295.632 ms - -[0m
+[0mPOST /api/auth/refresh [32m200[0m 442.166 ms - 605[0m
+[0mPOST /api/auth/refresh [32m200[0m 549.667 ms - 605[0m
+[0mGET /api/tasks?page=1&limit=16&sortBy=updatedAt [36m304[0m 265.754 ms - -[0m
+[0mGET /api/projects?page=1&limit=50 [36m304[0m 290.699 ms - -[0m
+[0mPOST /api/auth/refresh [33m401[0m 48.973 ms - 492[0m
+[0mPOST /api/auth/refresh [33m401[0m 66.908 ms - 492[0m

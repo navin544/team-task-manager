@@ -1,0 +1,83 @@
+Primary MongoDB connection failed (ECONNREFUSED). Falling back to local MongoDB.
+Failed to sync overdue tasks PoolClearedOnNetworkError: Connection to 127.0.0.1:27017 interrupted due to server monitor timeout
+    at ConnectionPool.interruptInUseConnections (C:\Users\nchou\Desktop\New folder (2)\node_modules\mongodb\lib\cmap\connection_pool.js:253:36)
+    at C:\Users\nchou\Desktop\New folder (2)\node_modules\mongodb\lib\cmap\connection_pool.js:241:41
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) {
+  errorLabelSet: Set(1) { 'PoolRequstedRetry' },
+  beforeHandshake: false,
+  address: '127.0.0.1:27017',
+  [cause]: MongoNetworkTimeoutError: connection <monitor> to 127.0.0.1:27017 timed out
+      at Timeout._onTimeout (C:\Users\nchou\Desktop\New folder (2)\node_modules\mongodb\lib\cmap\connection.js:126:26)
+      at listOnTimeout (node:internal/timers:605:17)
+      at process.processTimers (node:internal/timers:541:7) {
+    errorLabelSet: Set(2) { 'ResetPool', 'InterruptInUseConnections' },
+    beforeHandshake: false,
+    [cause]: undefined
+  }
+}
+Error: Refresh token is required
+    at refreshSession (C:\Users\nchou\Desktop\New folder (2)\backend\src\services\authService.js:118:11)
+    at C:\Users\nchou\Desktop\New folder (2)\backend\src\controllers\authController.js:53:25
+    at C:\Users\nchou\Desktop\New folder (2)\backend\src\utils\catchAsync.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:284:15
+    at router.process_params (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:280:10)
+Error: Refresh token is required
+    at refreshSession (C:\Users\nchou\Desktop\New folder (2)\backend\src\services\authService.js:118:11)
+    at C:\Users\nchou\Desktop\New folder (2)\backend\src\controllers\authController.js:53:25
+    at C:\Users\nchou\Desktop\New folder (2)\backend\src\utils\catchAsync.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:284:15
+    at router.process_params (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:280:10)
+Error: Refresh token is required
+    at refreshSession (C:\Users\nchou\Desktop\New folder (2)\backend\src\services\authService.js:118:11)
+    at C:\Users\nchou\Desktop\New folder (2)\backend\src\controllers\authController.js:53:25
+    at C:\Users\nchou\Desktop\New folder (2)\backend\src\utils\catchAsync.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:284:15
+    at router.process_params (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:280:10)
+Error: Refresh token is required
+    at refreshSession (C:\Users\nchou\Desktop\New folder (2)\backend\src\services\authService.js:118:11)
+    at C:\Users\nchou\Desktop\New folder (2)\backend\src\controllers\authController.js:53:25
+    at C:\Users\nchou\Desktop\New folder (2)\backend\src\utils\catchAsync.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:284:15
+    at router.process_params (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:280:10)
+Error: Refresh token is required
+    at refreshSession (C:\Users\nchou\Desktop\New folder (2)\backend\src\services\authService.js:118:11)
+    at C:\Users\nchou\Desktop\New folder (2)\backend\src\controllers\authController.js:53:25
+    at C:\Users\nchou\Desktop\New folder (2)\backend\src\utils\catchAsync.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:284:15
+    at router.process_params (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:280:10)
+Error: Refresh token is required
+    at refreshSession (C:\Users\nchou\Desktop\New folder (2)\backend\src\services\authService.js:118:11)
+    at C:\Users\nchou\Desktop\New folder (2)\backend\src\controllers\authController.js:53:25
+    at C:\Users\nchou\Desktop\New folder (2)\backend\src\utils\catchAsync.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:284:15
+    at router.process_params (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:280:10)

@@ -1,0 +1,23 @@
+Primary MongoDB connection failed (ECONNREFUSED). Falling back to local MongoDB.
+Error: Refresh token is required
+    at refreshSession (C:\Users\nchou\Desktop\New folder (2)\backend\src\services\authService.js:118:11)
+    at C:\Users\nchou\Desktop\New folder (2)\backend\src\controllers\authController.js:53:25
+    at C:\Users\nchou\Desktop\New folder (2)\backend\src\utils\catchAsync.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:284:15
+    at router.process_params (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:280:10)
+Error: Refresh token is required
+    at refreshSession (C:\Users\nchou\Desktop\New folder (2)\backend\src\services\authService.js:118:11)
+    at C:\Users\nchou\Desktop\New folder (2)\backend\src\controllers\authController.js:53:25
+    at C:\Users\nchou\Desktop\New folder (2)\backend\src\utils\catchAsync.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:284:15
+    at router.process_params (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\nchou\Desktop\New folder (2)\node_modules\express\lib\router\index.js:280:10)

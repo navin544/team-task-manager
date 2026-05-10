@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" fill="none">
+  <rect width="1280" height="720" rx="36" fill="#101826"/>
+  <rect x="40" y="40" width="1200" height="96" rx="28" fill="#172234"/>
+  <rect x="40" y="164" width="1200" height="110" rx="28" fill="#172234"/>
+  <rect x="40" y="302" width="278" height="360" rx="28" fill="#172234"/>
+  <rect x="344" y="302" width="278" height="360" rx="28" fill="#172234"/>
+  <rect x="648" y="302" width="278" height="360" rx="28" fill="#172234"/>
+  <rect x="952" y="302" width="288" height="360" rx="28" fill="#172234"/>
+  <text x="82" y="102" fill="#E5EEF9" font-family="Arial, sans-serif" font-size="34" font-weight="700">Task Board Preview</text>
+  <text x="86" y="346" fill="#14B8A6" font-family="Arial, sans-serif" font-size="22" font-weight="700">Todo</text>
+  <text x="390" y="346" fill="#14B8A6" font-family="Arial, sans-serif" font-size="22" font-weight="700">In Progress</text>
+  <text x="694" y="346" fill="#14B8A6" font-family="Arial, sans-serif" font-size="22" font-weight="700">Completed</text>
+  <text x="998" y="346" fill="#FB923C" font-family="Arial, sans-serif" font-size="22" font-weight="700">Overdue</text>
+</svg>
