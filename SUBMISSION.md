@@ -34,7 +34,7 @@ Team Task Manager is a production-grade platform built for high-performance team
 
 3. **Environment Variables:**
    - **Backend Service:**
-     - `MONGODB_URI`: *(Your MongoDB Atlas Connection String)*
+     - `MONGODB_URI`: *(Automatically provisioned & linked via railway.json)*
      - `MONGODB_DB_NAME`: `team_task_manager`
      - `JWT_ACCESS_SECRET`: *(Generate a 32+ char string)*
      - `JWT_REFRESH_SECRET`: *(Generate a 32+ char string)*

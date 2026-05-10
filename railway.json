@@ -1,6 +1,14 @@
 {
   "$schema": "https://railway.app/railway.schema.json",
   "services": {
+    "mongodb": {
+      "image": "mongo:7",
+      "config": {
+        "env": {
+          "MONGO_INITDB_DATABASE": "team_task_manager"
+        }
+      }
+    },
     "backend": {
       "source": {
         "directory": "backend"
@@ -8,7 +16,9 @@
       "config": {
         "healthcheck": "/health",
         "env": {
-          "NODE_ENV": "production"
+          "NODE_ENV": "production",
+          "MONGODB_URI": "${{mongodb.RAILWAY_INTERNAL_URL}}",
+          "MONGODB_DB_NAME": "team_task_manager"
         }
       },
       "build": {

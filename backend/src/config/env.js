@@ -8,6 +8,20 @@ dotenv.config();
 // It solves the "Missing Variable" issue by finding the value regardless of its name.
 let discoveredUri = process.env.MONGODB_URI || process.env.DATABASE_URL || process.env.MONGODB_URL;
 
+// Assemble from Railway Plugin variables if needed
+if (!discoveredUri || discoveredUri === 'MISSING_MONGODB_URI_IN_RAILWAY_DASHBOARD') {
+  if (process.env.MONGODBHOST && process.env.MONGODBPASSWORD) {
+    const user = process.env.MONGODBUSER || '';
+    const pass = process.env.MONGODBPASSWORD;
+    const host = process.env.MONGODBHOST;
+    const port = process.env.MONGODBPORT || '27017';
+    const db = process.env.MONGODBDATABASE || 'team_task_manager';
+    
+    discoveredUri = `mongodb://${user}:${pass}@${host}:${port}/${db}?authSource=admin`;
+    console.info('Auto-Assembled MongoDB URI from Railway Plugin variables.');
+  }
+}
+
 if (!discoveredUri || discoveredUri === 'MISSING_MONGODB_URI_IN_RAILWAY_DASHBOARD') {
   const mongoKey = Object.keys(process.env).find(key => 
     String(process.env[key]).startsWith('mongodb')
