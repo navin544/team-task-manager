@@ -3,21 +3,24 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   plugins: [react()],
+  resolve: {
+    dedupe: ['react', 'react-dom']
+  },
   server: {
     port: 3000,
     strictPort: true
   },
   build: {
-    chunkSizeWarningLimit: 800,
+    chunkSizeWarningLimit: 1000,
     rollupOptions: {
       output: {
         manualChunks(id) {
           if (id.includes('node_modules')) {
-            if (id.includes('react')) return 'vendor-react';
-            if (id.includes('lucide')) return 'vendor-icons';
-            if (id.includes('framer-motion')) return 'vendor-motion';
+            if (id.includes('react/') || id.includes('react-dom/')) return 'vendor-react';
             if (id.includes('recharts')) return 'vendor-charts';
-            return 'vendor';
+            if (id.includes('framer-motion')) return 'vendor-motion';
+            if (id.includes('lucide-react')) return 'vendor-icons';
+            return 'vendor-base';
           }
         }
       }
