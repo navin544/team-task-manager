@@ -51,4 +51,15 @@ Team Task Manager is a production-grade platform built for high-performance team
 *(Please record a 2-5 min walkthrough of the Dashboard, Project Creation, and Task Management features).*
 
 ---
+
+# 🛑 ATTENTION: FIXING THE "MISSING MONGODB_URI" ERROR
+If your Railway logs say "CRITICAL ERROR: MONGODB_URI is missing", follow these exact steps:
+
+1. **Verify your Service:** In Railway, click the service that shows the error logs (usually named **`team-task-manager`** or **`backend`**).
+2. **Go to Variables:** Open the **"Variables"** tab for that specific service.
+3. **Add the URI:** Create a variable named `MONGODB_URI` and paste your Atlas link.
+4. **Shared Variables:** If you added it to "backend" but are running the "root" service, the root service **cannot see it**. You MUST add it to the service showing the logs.
+5. **Diagnostics:** Once live, go to `[your-app-url]/api/diagnostics` to see exactly what variables the app detects.
+
+---
 **Prepared by Gemini CLI Agent**

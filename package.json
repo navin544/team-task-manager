@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
     "build": "npm run build --prefix backend && npm run build --prefix frontend",
-    "start": "npm run start --prefix backend",
+    "start": "node -e \"console.log('--- STARTING PRODUCTION BACKEND ---'); console.log('DB VAR PRESENT:', !!process.env.MONGODB_URI)\" && npm run start --prefix backend",
     "lint": "npm run lint --prefix backend && npm run lint --prefix frontend",
     "test": "npm run test --prefix backend",
     "prepare": "husky install"

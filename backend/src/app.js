@@ -47,7 +47,24 @@ app.use('/api', routes);
 app.get('/health', (_req, res) => {
   res.status(200).json({
     success: true,
-    message: 'Team Task Manager API is healthy'
+    message: 'Team Task Manager API is healthy',
+    timestamp: new Date().toISOString()
+  });
+});
+
+app.get('/api/diagnostics', (_req, res) => {
+  const envKeys = Object.keys(process.env).filter(k => 
+    !k.includes('PASSWORD') && 
+    !k.includes('SECRET') && 
+    !k.includes('KEY') && 
+    !k.includes('PASS')
+  );
+  
+  res.status(200).json({
+    status: 'Operational',
+    node_env: process.env.NODE_ENV,
+    db_connected: env.MONGODB_URI !== 'MISSING_MONGODB_URI_IN_RAILWAY_DASHBOARD',
+    detected_keys: envKeys
   });
 });
 
