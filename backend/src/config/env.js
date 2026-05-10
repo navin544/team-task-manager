@@ -1,5 +1,3 @@
-const path = require('path');
-
 const dotenv = require('dotenv');
 const { z } = require('zod');
 
