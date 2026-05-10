@@ -6,7 +6,7 @@ dotenv.config();
 // --- INDUSTRIAL AUTO-DISCOVERY LAYER ---
 // This scans ALL environment variables for a MongoDB connection string.
 // It solves the "Missing Variable" issue by finding the value regardless of its name.
-let discoveredUri = process.env.MONGODB_URI || process.env.DATABASE_URL || process.env.MONGODB_URL;
+let discoveredUri = process.env.MONGODB_URI || process.env.DATABASE_URL || process.env.MONGODB_URL || process.env.MONGO_URL;
 
 // Assemble from Railway Plugin variables if needed
 if (!discoveredUri || discoveredUri === 'MISSING_MONGODB_URI_IN_RAILWAY_DASHBOARD') {
@@ -24,20 +24,12 @@ if (!discoveredUri || discoveredUri === 'MISSING_MONGODB_URI_IN_RAILWAY_DASHBOAR
 
 if (!discoveredUri || discoveredUri === 'MISSING_MONGODB_URI_IN_RAILWAY_DASHBOARD') {
   const mongoKey = Object.keys(process.env).find(key => 
-    String(process.env[key]).startsWith('mongodb')
+    String(process.env[key]).toLowerCase().startsWith('mongodb://') || 
+    String(process.env[key]).toLowerCase().startsWith('mongodb+srv://')
   );
   if (mongoKey) {
     discoveredUri = process.env[mongoKey];
     console.info(`Auto-Discovered MongoDB URI in variable: ${mongoKey}`);
-  }
-}
-
-// FINAL ZERO-FAILURE FALLBACK: 
-// Only if we are on Railway and everything else failed, use the verified Atlas URI.
-if (!discoveredUri || discoveredUri === 'MISSING_MONGODB_URI_IN_RAILWAY_DASHBOARD') {
-  if (process.env.RAILWAY_STATIC_URL || process.env.RAILWAY_ENVIRONMENT || process.env.RAILWAY_PUBLIC_DOMAIN) {
-    discoveredUri = 'mongodb+srv://codingbuddy55_db_user:2HIKsr0qZ7VKwYtO@cluster0.p1huqyu.mongodb.net/team_task_manager?retryWrites=true&w=majority';
-    console.warn('CRITICAL: Using verified selection-process fallback URI.');
   }
 }
 

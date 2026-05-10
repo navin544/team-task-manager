@@ -45,7 +45,14 @@ io.on('connection', (socket) => {
 setSocketServer(io);
 
 async function startServer() {
-  await connectToDatabase();
+  try {
+    await connectToDatabase();
+    console.info('Database connection established successfully.');
+  } catch (dbError) {
+    console.error('DATABASE CONNECTION FAILED:', dbError.message);
+    console.info('Server will continue to start to allow for diagnostics and health checks.');
+  }
+
   startOverdueTaskJob();
 
   server.listen(env.PORT, () => {
