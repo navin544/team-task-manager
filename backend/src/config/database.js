@@ -27,6 +27,12 @@ async function connectToDatabase() {
     return mongoose.connection;
   }
 
+  if (env.MONGODB_URI === 'MISSING_MONGODB_URI_IN_RAILWAY_DASHBOARD') {
+    console.error('CRITICAL ERROR: MONGODB_URI is not set in your Railway Variables!');
+    console.error('Please go to Railway Dashboard -> Backend Service -> Variables and add MONGODB_URI.');
+    process.exit(1);
+  }
+
   const maskedUri = env.MONGODB_URI.replace(/\/\/.*@/, '//****:****@');
   console.info(`Attempting to connect to MongoDB: ${maskedUri}`);
 

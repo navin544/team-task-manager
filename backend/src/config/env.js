@@ -8,7 +8,7 @@ dotenv.config();
 const envSchema = z.object({
   NODE_ENV: z.enum(['development', 'test', 'production']).default('development'),
   PORT: z.coerce.number().default(5000),
-  MONGODB_URI: z.string().min(1),
+  MONGODB_URI: z.string().default('MISSING_MONGODB_URI_IN_RAILWAY_DASHBOARD'),
   MONGODB_DB_NAME: z.string().min(1).default('team_task_manager'),
   CLIENT_URL: z.string().default('http://localhost:5173'),
   CORS_ORIGIN: z.string().default('http://localhost:5173'),
