@@ -12,6 +12,9 @@ async function connect(uri) {
 }
 
 function shouldFallbackToLocalMongo(error) {
+  if (env.NODE_ENV === 'production') {
+    return false;
+  }
   if (env.NODE_ENV !== 'development' || env.MONGODB_URI === LOCAL_DEVELOPMENT_URI) {
     return false;
   }

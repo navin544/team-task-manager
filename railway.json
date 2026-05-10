@@ -1,0 +1,27 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "services": {
+    "backend": {
+      "source": {
+        "directory": "backend"
+      },
+      "config": {
+        "healthcheck": "/health",
+        "env": {
+          "NODE_ENV": "production"
+        }
+      }
+    },
+    "frontend": {
+      "source": {
+        "directory": "frontend"
+      },
+      "config": {
+        "env": {
+          "VITE_API_URL": "${{backend.RAILWAY_PUBLIC_DOMAIN}}/api",
+          "VITE_SOCKET_URL": "${{backend.RAILWAY_PUBLIC_DOMAIN}}"
+        }
+      }
+    }
+  }
+}
