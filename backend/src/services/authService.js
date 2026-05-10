@@ -53,22 +53,27 @@ async function registerUser(payload) {
   }
 
   const password = await bcrypt.hash(payload.password, 12);
+  const verificationToken = crypto.randomBytes(32).toString('hex');
+
   const user = await User.create({
     name: payload.name,
     email,
     password,
-    role: 'MEMBER'
+    role: 'MEMBER',
+    verificationToken
   });
+
+  const verificationLink = `${env.CLIENT_URL}/verify-email?token=${verificationToken}`;
 
   try {
     await sendEmail({
       to: user.email,
-      subject: 'Welcome to Team Task Manager',
-      text: `Hi ${user.name},\n\nWelcome to Team Task Manager! Your account has been successfully created.`,
-      html: `<h1>Welcome to Team Task Manager</h1><p>Hi ${user.name},</p><p>Your account has been successfully created. Start managing your projects and tasks today!</p>`
+      subject: 'Verify your Team Task Manager account',
+      text: `Hi ${user.name},\n\nPlease verify your account using this link: ${verificationLink}`,
+      html: `<h1>Account Verification</h1><p>Hi ${user.name},</p><p>Please click the button below to verify your account:</p><a href="${verificationLink}" style="display:inline-block;padding:10px 20px;background-color:#007bff;color:white;text-decoration:none;border-radius:5px;">Verify Account</a>`
     });
   } catch (emailError) {
-    console.warn('Welcome email could not be sent, but user was created:', emailError.message);
+    console.warn('Verification email could not be sent:', emailError.message);
   }
 
   await logActivity({
@@ -80,6 +85,25 @@ async function registerUser(payload) {
   });
 
   return issueSession(user);
+}
+
+async function verifyEmail(token) {
+  const user = await User.findOne({ verificationToken: token });
+
+  if (!user) {
+    throw new ApiError(400, 'Invalid or expired verification token');
+  }
+
+  user.isVerified = true;
+  user.verificationToken = null;
+  await user.save();
+
+  await logActivity({
+    actorId: user.id,
+    action: 'auth.email_verified',
+    entityType: 'AUTH',
+    entityId: user.id
+  });
 }
 
 async function loginUser(payload) {

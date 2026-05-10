@@ -78,11 +78,20 @@ const confirmPasswordReset = catchAsync(async (req, res) => {
   });
 });
 
+const verifyEmailAccount = catchAsync(async (req, res) => {
+  await verifyEmail(req.query.token);
+
+  return sendSuccess(res, {
+    message: 'Email verified successfully'
+  });
+});
+
 module.exports = {
   confirmPasswordReset,
   login,
   logout,
   refresh,
   register,
-  requestPasswordReset
+  requestPasswordReset,
+  verifyEmailAccount
 };
