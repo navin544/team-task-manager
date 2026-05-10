@@ -5,6 +5,15 @@ const { z } = require('zod');
 
 dotenv.config();
 
+console.info('--- Railway Environment Diagnostics ---');
+console.info('Detected variable keys:', Object.keys(process.env).filter(k => !k.includes('PASSWORD') && !k.includes('SECRET')));
+console.info('---------------------------------------');
+
+// Fallback logic for Railway/Cloud providers
+if (!process.env.MONGODB_URI && process.env.DATABASE_URL) {
+  process.env.MONGODB_URI = process.env.DATABASE_URL;
+}
+
 const envSchema = z.object({
   NODE_ENV: z.enum(['development', 'test', 'production']).default('development'),
   PORT: z.coerce.number().default(5000),
