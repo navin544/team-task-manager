@@ -236,5 +236,6 @@ module.exports = {
   logoutUser,
   refreshSession,
   registerUser,
-  resetPassword
+  resetPassword,
+  verifyEmail
 };

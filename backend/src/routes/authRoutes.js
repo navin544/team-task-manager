@@ -6,7 +6,8 @@ const {
   logout,
   refresh,
   register,
-  requestPasswordReset
+  requestPasswordReset,
+  verifyEmailAccount
 } = require('../controllers/authController');
 const validateRequest = require('../middleware/validateRequest');
 const {

@@ -5,7 +5,8 @@ const {
   logoutUser,
   refreshSession,
   registerUser,
-  resetPassword
+  resetPassword,
+  verifyEmail
 } = require('../services/authService');
 const { clearRefreshCookie, setRefreshCookie } = require('../services/tokenService');
 const catchAsync = require('../utils/catchAsync');
