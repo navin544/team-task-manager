@@ -3,12 +3,12 @@ const path = require('path');
 const dotenv = require('dotenv');
 const { z } = require('zod');
 
-dotenv.config({ path: path.resolve(process.cwd(), '.env') });
+dotenv.config();
 
 const envSchema = z.object({
   NODE_ENV: z.enum(['development', 'test', 'production']).default('development'),
   PORT: z.coerce.number().default(5000),
-  MONGODB_URI: z.string().min(1).default('mongodb://localhost:27017/team_task_manager'),
+  MONGODB_URI: z.string().min(1),
   MONGODB_DB_NAME: z.string().min(1).default('team_task_manager'),
   CLIENT_URL: z.string().default('http://localhost:5173'),
   CORS_ORIGIN: z.string().default('http://localhost:5173'),

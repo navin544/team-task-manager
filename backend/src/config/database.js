@@ -27,6 +27,9 @@ async function connectToDatabase() {
     return mongoose.connection;
   }
 
+  const maskedUri = env.MONGODB_URI.replace(/\/\/.*@/, '//****:****@');
+  console.info(`Attempting to connect to MongoDB: ${maskedUri}`);
+
   if (!connectionPromise) {
     connectionPromise = connect(env.MONGODB_URI)
       .catch(async (error) => {
